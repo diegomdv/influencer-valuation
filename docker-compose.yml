@@ -1,6 +1,6 @@
 services:
   influencer-valuation:
-    image: influencer-valuation:latest
+    build: .
     ports:
       - "8092:80"
     restart: unless-stopped

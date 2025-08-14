@@ -292,7 +292,7 @@ export default function InfluencerValuationTool() {
       theme: "plain"
     });
 
-    const filename = `${(personName || handle || PLATFORM_DEFAULTS[platform].label).replace(/\s+/g, "-")}-onepager.pdf`;
+    const filename = `${(personName || handle || PLATFORM_DEFAULTS[platform].label).replace(/\\s+/g, "-")}-onepager.pdf`;
     doc.save(filename);
   }
 
